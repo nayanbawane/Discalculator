@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dis calculator</string>
+
+    <string name="calculate">calculate</string>
+
+
+    <string name="reset">reset</string>
+</resources>
