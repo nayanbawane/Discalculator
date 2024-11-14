@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="@color/teak"
     android:gravity="center"
-    android:orientation="vertical">
+
+android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,7 +39,7 @@
             android:layout_marginLeft="20dp"
             android:background="#ffff"
             android:gravity="center"
-            android:hint="TK"
+            android:hint="Add Price"
             android:inputType="numberDecimal"
             android:textColor="#ffc44c4c"
             android:textSize="25sp" />
@@ -74,13 +75,13 @@
         android:id="@+id/btncal"
         android:layout_width="183dp"
         android:layout_height="65dp"
-        android:layout_marginTop="10sp"
+        android:layout_marginTop="25sp"
         android:layout_marginBottom="30dp"
         android:backgroundTint="#c44c4c"
         android:text="@string/calculate"
         android:textAllCaps="true"
         android:textColor="#e9b7b3"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -92,7 +93,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Final Price:"
+            android:text="Final Price"
             android:textColor="#ffff"
             android:textSize="25sp" />
 
@@ -100,7 +101,7 @@
             android:id="@+id/price"
             android:layout_width="120dp"
             android:layout_height="45dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="30dp"
             android:background="#ffff"
             android:gravity="center"
             android:hint="Price"
@@ -118,18 +119,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Discount Amount:"
+            android:text="Discount\nAmount"
+            android:textAlignment="center"
             android:textColor="#ffff"
             android:textSize="25sp" />
 
         <EditText
             android:id="@+id/tk"
-            android:layout_width="120dp"
+            android:layout_width="150dp"
             android:layout_height="45dp"
             android:layout_marginLeft="17dp"
             android:background="#ffff"
             android:gravity="center"
-            android:hint="TK"
+            android:hint="Dis Amount"
             android:inputType="numberDecimal"
             android:textColor="#ffc44c4c"
             android:textSize="25sp" />

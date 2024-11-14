@@ -1,10 +1,13 @@
 package com.Ltsolutions.discalculator;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -41,6 +44,20 @@ public class MainActivity extends AppCompatActivity {
         });
         this.btncal.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
+
+
+                if (TextUtils.isEmpty(MainActivity.this.taka.getText().toString())) {
+                    taka.setError("Enter Price");
+                    Toast.makeText(MainActivity.this, "Enter Price", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(MainActivity.this.discount.getText().toString())) {
+                    discount.setError("Enter Discount %");
+                    Toast.makeText(MainActivity.this, "Enter Discount %", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 float parseFloat = (Float.parseFloat(MainActivity.this.discount.getText().toString()) / 100.0f) * Float.parseFloat(MainActivity.this.taka.getText().toString());
                 MainActivity.this.price.setText(Float.toString((-parseFloat) + Float.parseFloat(MainActivity.this.taka.getText().toString())));
                 MainActivity.this.tk.setText(Float.toString(parseFloat));
